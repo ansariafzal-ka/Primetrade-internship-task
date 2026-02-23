@@ -1,18 +1,8 @@
-2026-02-23 18:26:00,547 - INFO - Job started.
-2026-02-23 18:26:00,548 - INFO - Config loaded successfully, seed=42, window=5, version=v1.
-2026-02-23 18:26:00,576 - INFO - Metrics saved successfully.
-2026-02-23 18:26:00,576 - ERROR - Job failed: Missing required column: close
-Traceback (most recent call last):
-  File "C:\Users\ansar\Desktop\Workspace\Personal\MLOPs\Primetrade Intership Task\run.py", line 109, in <module>
-    df = load_data(args.input)
-  File "C:\Users\ansar\Desktop\Workspace\Personal\MLOPs\Primetrade Intership Task\run.py", line 50, in load_data
-    raise ValueError('Missing required column: close')
-ValueError: Missing required column: close
-2026-02-23 18:35:44,683 - INFO - Job started.
-2026-02-23 18:35:44,684 - INFO - Config loaded successfully, seed=42, window=5, version=v1.
-2026-02-23 18:35:44,735 - INFO - Dataset loaded successfully. Rows loaded: 10000
-2026-02-23 18:35:44,735 - INFO - Computing rolling mean with window=5...
-2026-02-23 18:35:44,747 - INFO - Generating trading signal...
-2026-02-23 18:35:44,754 - INFO - Metrics computed successfully: {'version': 'v1', 'rows_processed': 9996, 'metric': 'signal_rate', 'value': 0.4991, 'latency_ms': 70, 'seed': 42, 'status': 'success'}
-2026-02-23 18:35:44,755 - INFO - Metrics saved successfully.
-2026-02-23 18:35:44,756 - INFO - Job completed successfully.
+2026-02-23 18:40:48,505 - INFO - Job started.
+2026-02-23 18:40:48,506 - INFO - Config loaded successfully, seed=42, window=5, version=v1.
+2026-02-23 18:40:48,523 - INFO - Dataset loaded successfully. Rows loaded: 10000
+2026-02-23 18:40:48,524 - INFO - Computing rolling mean with window=5...
+2026-02-23 18:40:48,525 - INFO - Generating trading signal...
+2026-02-23 18:40:48,529 - INFO - Metrics computed successfully: {'version': 'v1', 'rows_processed': 9996, 'metric': 'signal_rate', 'value': 0.4991, 'latency_ms': 23, 'seed': 42, 'status': 'success'}
+2026-02-23 18:40:48,530 - INFO - Metrics saved successfully.
+2026-02-23 18:40:48,530 - INFO - Job completed successfully.
