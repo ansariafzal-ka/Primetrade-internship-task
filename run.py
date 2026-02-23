@@ -88,7 +88,8 @@ def write_metrics(metrics, output_path):
             json.dump(metrics, f, indent=2)
         logging.info('Metrics saved successfully.')
     except Exception:
-        raise logging.exception('Failed to write metrics file.')
+        logging.exception('Failed to write metrics file.')
+        raise
     
 if __name__ == '__main__':
 
