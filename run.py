@@ -54,6 +54,14 @@ def load_data(data_path):
     return df
 
 def compute_rolling_mean(df, window):
+    """
+    Compute rolling mean of the 'close' column.
+
+    For the first (window - 1) rows, the rolling mean cannot be computed,
+    so pandas returns NaN values. These rows will later be excluded from
+    signal generation by dropping rows containing NaN values to ensure
+    signals are computed only where a valid rolling mean exists.
+    """
     logging.info(f'Computing rolling mean with window={window}...')
     df['rolling_mean'] = df['close'].rolling(window=window).mean()
     return df
